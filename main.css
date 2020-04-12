@@ -1,0 +1,192 @@
+/* Michael Bradley 100549812
+CSS animations
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin-left: 50%;
+}
+/* original circle */
+#c1 {
+    opacity: 0;
+    animation: first 20s linear forwards;
+}
+
+/* moving triangle */
+#triangle {
+    opacity: 0;
+    animation: second 20s linear forwards;
+}
+/* replacement triangle */
+#triangle2{
+    opacity: 0;
+    animation: third 20s linear forwards;
+}
+/* moving square */
+#square1{
+    opacity: 0;
+    animation: fourth 20s linear forwards;
+}
+/* replacement square */
+#square2{
+    opacity: 0;
+    animation: fifth 20s linear forwards;
+}
+/* moving circle */
+#c2{
+    opacity: 0;
+    animation: sixth 20s linear forwards;
+}
+
+@keyframes first {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    40% {}
+
+    50% {}
+
+    60% {}
+
+    70% {}
+
+    80% {}
+
+    90% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes second {
+    0% {
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: translate(-100px, 100px);
+    }
+
+    35% {
+        opacity: 0;
+        transform: translate(-100px, 100px);
+    }
+}
+
+@keyframes third{
+    30%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 1;
+    }
+    45%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+@keyframes fourth{
+    0%{
+        opacity: 0;
+    }
+    35%{
+        opacity: 0;
+    }
+    40%{
+      opacity: 1;  
+    }
+    45%{
+        transform: translate(150px, 150px);
+    }
+    50%{
+        opacity: 1;
+    }
+    55%{
+        opacity: 0;
+    }
+}
+
+@keyframes fifth{
+    0%{
+        opacity: 0;
+    }
+    45%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    85%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0;
+    }
+}
+
+@keyframes sixth{
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        transform: translate(200px, 200px);
+    }
+    85%{
+        opacity: 1;
+        transform: translate(200px, 200px);
+    }
+    90%{
+        opacity: 1;
+        transform: translate(200px, 200px);
+    }
+    95%{
+        opacity: 0;
+        transform: translate(200px, 200px);
+    }
+    
+}
